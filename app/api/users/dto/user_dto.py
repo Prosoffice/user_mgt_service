@@ -10,7 +10,6 @@ class UserBase(BaseModel):
 
 
 class UserCreateDto(UserBase):
-    email: EmailStr
     password: str
 
 
@@ -26,7 +25,7 @@ class UserInDbBase(UserBase):
 
 
 class User(UserInDbBase):
-    ...
+    pass
 
 
 class UserInDb(UserInDbBase):
